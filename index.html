@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitrogenium Innovations - Advanced Industrial Gas Solutions</title>
+    <meta name="description" content="Leading manufacturer of industrial gas generators, filtration systems, and automation solutions. Industry 4.0 technology for modern manufacturing.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        
+        .hero-pattern {
+            background-image: url("./hexagons-pattern-blue-background-genetic-research-molecular-structure-chemical-engineering_322958-511.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+        }
+        
+        .floating-animation {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #f97316, #ea580c);
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #f97316, #ea580c);
+            transform-origin: left;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+    
+
+    <!-- Navigation Header -->
+    <header class="fixed w-full overflow-hidden top-0 w-full bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center w-full justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="https://www.nitrogenium.co.in/images/logo.png" class="w-[200px]"/>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">Home</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">Solutions</a>
+                    <a href="#products" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">Products</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-500 font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- Contact Info & CTA -->
+                <div class="flex hidden md:flex items-center space-x-4">
+                    <div class=" items-center space-x-2 text-sm">
+                        <i class="fas fa-phone text-orange-500"></i>
+                        <span class="text-gray-700 font-medium">+91-9810070303</span>
+                    </div>
+                    <button id="openEnquiryModalBtn" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                        <i class="fas fa-quote-right mr-2"></i>Get Quote
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-700" id="mobileMenuBtn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t border-gray-100" id="mobileMenu">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-700 hover:text-orange-500 font-medium">Home</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-orange-500 font-medium">Solutions</a>
+                    <a href="#products" class="text-gray-700 hover:text-orange-500 font-medium">Products</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-500 font-medium">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 font-medium">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero Section -->
+  <section id="home" class="relative min-h-screen w-full flex items-center gradient-bg hero-pattern overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl opacity-60"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl opacity-60"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10 py-16 lg:py-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white text-center lg:text-left mt-20 md:mt-16" data-aos="fade-right">
+                <div class="inline-flex items-center bg-white/20 backdrop-blur-sm border border-white/30 px-4 py-2 rounded-full mb-6 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-award text-yellow-300 mr-2"></i>
+                    <span class="text-sm font-medium">Pioneering Industry 4.0 Solutions</span>
+                </div>
+
+                <h1 class="text-5xl lg:text-4xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Revolutionizing Industries with <span class="text-yellow-300">Intelligent</span> Gas Systems
+                </h1>
+
+                <p class="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed animate-fade-in-up delay-200">
+                    Unlock unparalleled efficiency and safety with our cutting-edge industrial gas solutions, powered by advanced AI, seamless IoT integration, and real-time predictive analytics.
+                </p>
+
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 animate-fade-in-up delay-400">
+                 
+                    <div class="glass-effect px-4 py-2 rounded-full text-sm font-medium flex items-center shadow-lg">
+                        <i class="fas fa-network-wired mr-2 text-green-300"></i>Seamless IoT Connectivity
+                    </div>
+                    <div class="glass-effect px-4 py-2 rounded-full text-sm font-medium flex items-center shadow-lg">
+                        <i class="fas fa-tachometer-alt mr-2 text-red-300"></i>Precision Real-time Control
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 animate-fade-in-up delay-600">
+                    <button id="openEnquiryModalBtn" class="bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                    Explore Solutions
+                    </button>
+                    <button id="openEnquiryModalBtn" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105 shadow-xl">
+                       Talk to Expert
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end" data-aos="fade-left">
+                <div class="floating-animation w-full max-w-lg lg:max-w-none">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format&q=80"
+                         alt="Advanced Industrial Robotics in Manufacturing"
+                         class="rounded-2xl shadow-2xl w-full h-auto object-cover transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                </div>
+
+                <div class="absolute -bottom-6 -left-6 glass-effect p-4 rounded-xl text-white text-center sm:text-left hidden md:block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-2xl font-bold text-yellow-300">250+</div>
+                    <div class="text-sm opacity-90">Successful Deployments</div>
+                </div>
+
+                <div class="absolute -top-6 -right-6 glass-effect p-4 rounded-xl text-white text-center sm:text-left hidden md:block" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-2xl font-bold text-yellow-300">99.99%</div>
+                    <div class="text-sm opacity-90">Reliability Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce hidden sm:block">
+        <i class="fas fa-chevron-down text-2xl"></i>
+    </div>
+</section>
+
+    <!-- Section 2: Trust Indicators -->
+    <section class="py-10 md:py-16 overflow-hidden bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <p class="text-gray-600 font-medium mb-6">Trusted by Industry Leaders Worldwide</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=TATA" alt="TATA Group" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=RELIANCE" alt="Reliance" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=MAHINDRA" alt="Mahindra" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=BAJAJ" alt="Bajaj" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=L&T" alt="L&T" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://via.placeholder.com/120x60/4A5568/FFFFFF?text=GODREJ" alt="Godrej" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="products" class="py-10 md:py-20 overflow-hidden bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                <i class="fas fa-cogs mr-2"></i>
+                <span class="font-semibold">Our Products</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Easy User Setup in Expert Developer Mind</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Explore our comprehensive range of industrial solutions designed for modern manufacturing.
+            </p>
+        </div>
+
+        <div id="productGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </div>
+
+    <div id="productModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto transform transition-all sm:p-6 p-4">
+            <div class="flex justify-end">
+                <button class="close-product-modal text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 py-4">
+                <div class="image-column">
+                    <img id="modalProductImage" src="" alt="Product Image" class="w-full h-auto rounded-lg shadow">
+                </div>
+                <div class="info-column">
+                    <h3 id="modalProductName" class="text-3xl font-bold text-gray-800 mb-3"></h3>
+                    <p id="modalProductCode" class="text-gray-600 mb-4"><strong>Product Code: </strong><span class="font-semibold"></span></p>
+                    <div id="modalProductShortDescription" class="text-gray-700 leading-relaxed mb-6"></div>
+                     <h4 class="text-xl font-bold text-gray-800 mb-3">Product Overview</h4>
+                <p id="modalProductDescription" class="text-gray-700 leading-relaxed mb-4"></p>
+                
+                    <button id="openEnquiryModalBtn" class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+                        Enquire Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8">
+               
+                <h4 class="text-xl font-bold text-gray-800 mb-3">Key Features:</h4>
+                <ul id="modalProductFeatures" class="list-disc list-inside text-gray-700 space-y-2 mb-4"></ul>
+                
+                <h4 class="text-xl font-bold text-gray-800 mb-3">How it Works:</h4>
+                <p id="modalProductHowItWorks" class="text-gray-700 leading-relaxed mb-4"></p>
+
+                <h4 class="text-xl font-bold text-gray-800 mb-3">Advantages:</h4>
+                <ul id="modalProductAdvantages" class="list-disc list-inside text-gray-700 space-y-2 mb-4"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="enquiryModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] overflow-y-auto transform transition-all sm:p-6 p-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">Enquire About <span id="enquiryProductName" class="text-orange-600"></span></h3>
+                <button class="close-enquiry-modal text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <form id="enquiryForm" class="space-y-4">
+                <div>
+                    <label for="enquiryName" class="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
+                    <input type="text" id="enquiryName" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div>
+                    <label for="enquiryEmail" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                    <input type="email" id="enquiryEmail" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div>
+                    <label for="enquiryPhone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number:</label>
+                    <input type="tel" id="enquiryPhone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div>
+                    <label for="enquiryMessage" class="block text-gray-700 text-sm font-bold mb-2">Your Message:</label>
+                    <textarea id="enquiryMessage" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+                </div>
+                <input type="hidden" id="enquiryProductId" name="productId">
+                <input type="hidden" id="enquiryProductHiddenName" name="productName">
+                
+                <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors w-full">
+                    Submit Enquiry
+                </button>
+            </form>
+            <div id="enquiryStatus" class="mt-4 text-center hidden"></div>
+        </div>
+    </div>
+</section>
+  <section class="py-10 md:py-20 overflow-hidden gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl lg:text-6xl font-bold mb-2 counter" data-target="189">0</div>
+                    <div class="text-lg opacity-90">Completed Projects</div>
+                    <div class="w-16 h-1 bg-white/30 mx-auto mt-2"></div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl lg:text-6xl font-bold mb-2 counter" data-target="168">0</div>
+                    <div class="text-lg opacity-90">Happy Clients</div>
+                    <div class="w-16 h-1 bg-white/30 mx-auto mt-2"></div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl lg:text-6xl font-bold mb-2 counter" data-target="13">0</div>
+                    <div class="text-lg opacity-90">Years Experience</div>
+                    <div class="w-16 h-1 bg-white/30 mx-auto mt-2"></div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl lg:text-6xl font-bold mb-2 counter" data-target="99">0</div>
+                    <div class="text-lg opacity-90">Client Satisfaction</div>
+                    <div class="w-16 h-1 bg-white/30 mx-auto mt-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const productGrid = document.getElementById('productGrid');
+        const productModal = document.getElementById('productModal');
+        const closeModalButton = document.querySelector('.close-product-modal');
+        const modalProductImage = document.getElementById('modalProductImage');
+        const modalProductName = document.getElementById('modalProductName');
+        const modalProductCode = document.getElementById('modalProductCode').querySelector('span');
+        const modalProductShortDescription = document.getElementById('modalProductShortDescription');
+        // Removed modalRequestQuoteLink as it's no longer a direct link
+        const modalProductDescription = document.getElementById('modalProductDescription');
+        const modalProductFeatures = document.getElementById('modalProductFeatures');
+        const modalProductHowItWorks = document.getElementById('modalProductHowItWorks');
+        const modalProductAdvantages = document.getElementById('modalProductAdvantages');
+
+        // New elements for enquiry modal
+        const openEnquiryModalBtn = document.getElementById('openEnquiryModalBtn');
+        const enquiryModal = document.getElementById('enquiryModal');
+        const closeEnquiryModalButton = document.querySelector('.close-enquiry-modal');
+        const enquiryProductNameSpan = document.getElementById('enquiryProductName');
+        const enquiryForm = document.getElementById('enquiryForm');
+        const enquiryProductIdInput = document.getElementById('enquiryProductId');
+        const enquiryProductHiddenNameInput = document.getElementById('enquiryProductHiddenName');
+        const enquiryStatusDiv = document.getElementById('enquiryStatus');
+
+const productsData = [
+        {
+            id: 42,
+            name: 'Nitrogen Gas Generator System',
+            category: 'generators',
+            image: 'https://www.nitrogenium.co.in/product_img/1745488296Industrial%20Gas%20Generators%20(1).png',
+            shortDescription: '• Purity Range: 95% to 99.999%',
+            description: 'Engineered to deliver ultra-high purity nitrogen (95% to 99.999%) from clean, dry compressed air. Ideal for electronics, food packaging, pharmaceuticals, and more.',
+            features: ['Purity Range: 95% to 99.999%', 'Advanced PLC/HMI Touchscreen Control', 'Mass Flow Controller & Oxygen Analyzer', 'Expandable Multi-Bank Design', 'Purity Dependent Energy Saving (PDES)', 'Compact & Modular – Easy Installation', 'Payback Period: Typically 6–24 months'],
+            howItWorks: 'Compressed air passes through dual extruded columns filled with Carbon Molecular Sieve (CMS). The CMS selectively adsorbs oxygen and other impurities, allowing high-purity nitrogen to pass through and be stored for process use.',
+            advantages: ['Save up to 80% over bottled/liquid nitrogen', 'Safe, on-site production—no cylinder handling', 'Energy-efficient operation with “EcoMode” control', 'Remote monitoring and diagnostics', 'Environmentally friendly – reduces carbon footprint'],
+        },
+        {
+            id: 21,
+            name: 'Industrial Air Dryer Unit',
+            category: 'filtration',
+            image: 'https://www.nitrogenium.co.in/product_img/1743419690RDP%20(2).png',
+            shortDescription: '• Advanced 3-stage heat exchanger for superior moisture removal',
+            description: 'The RDP Air Dryer provides highly efficient removal of moisture from compressed air, crucial for protecting sensitive equipment and processes from the damaging effects of humidity.',
+            features: ['Advanced 3-stage heat exchanger for superior moisture removal', 'Reduces pressure dew point to +3°C for dry, high-quality compressed air', 'Reliable & energy-efficient cooling system', 'Air-cooled refrigerant system using R513a', 'Compact design for space-saving installation', 'Simple maintenance with easy access components'],
+            howItWorks: 'Utilizes a sophisticated cooling system and heat exchangers to reduce the temperature of compressed air, causing moisture to condense and be removed, resulting in a low pressure dew point.',
+            advantages: ['Prevents corrosion and rust in pipelines and equipment', 'Enhances the longevity and reliability of pneumatic tools', 'Improves product quality in moisture-sensitive applications', 'Reduces maintenance costs associated with moisture damage', 'Energy-efficient operation lowers running costs'],
+        },
+        {
+            id: '001',
+            name: 'Compressed Air Filter Set',
+            category: 'filtration',
+            image: 'https://www.nitrogenium.co.in/product_img/1742535014AAF%20(2).png',
+            shortDescription: '• High-efficiency filtration for particles, water, oil aerosols, and vapors',
+            description: 'The AAF Series filters are engineered to provide superior air purification, removing particles, water, oil aerosols, and vapors to meet ISO 8573-1 air quality standards, ensuring optimal performance of your compressed air system.',
+            features: ['High-efficiency filtration for particles, water, oil aerosols, and vapors', 'ISO 8573-compliant air quality with 5 filtration grades (P, R, M, S, A)', 'Corrosion-resistant KTL cataphoretic coating for harsh environments', 'Reliable internal and external condensate drain options', 'Broad range of flow capacities to suit various compressed air systems', 'Easy installation and maintenance with advanced connection design'],
+            howItWorks: 'Compressed air passes through multiple filtration stages, each designed to remove specific contaminants. The innovative filter media and housing design ensure maximum contaminant retention and minimal pressure drop.',
+            advantages: ['Extends the lifespan of downstream equipment', 'Ensures high product quality in critical applications', 'Reduces operational costs by minimizing equipment wear and tear', 'Complies with stringent industrial air quality standards', 'Robust construction for reliable, long-term performance'],
+        },
+        {
+            id: 32,
+            name: 'Liquid Nitrogen Generator Unit',
+            category: 'generators',
+            image: 'https://www.nitrogenium.co.in/product_img/1745049586LN20A%20(1).png',
+            shortDescription: '• LN2 Output: 20 litres/day',
+            description: 'The CALLISTO LN20A is a fully automated system that produces liquid nitrogen on-site, integrating a PSA Nitrogen Generator to offer high purity and minimal user intervention, ideal for laboratories and research facilities.',
+            features: ['LN2 Output: 20 litres/day', 'Integrated PSA Nitrogen Generator', 'Fully Automated System - Minimal user intervention', 'High Purity Nitrogen: Up to 99.999%', 'Compact All-in-One Design', 'Touchscreen Control Panel for easy monitoring', 'Safety Alarms and Diagnostics built-in'],
+            howItWorks: 'This system combines a PSA nitrogen generator with a cryocooler to liquefy the high-purity nitrogen produced. The automated controls manage the entire process, from air intake to liquid nitrogen storage.',
+            advantages: ['Cost-effective on-site LN2 production, eliminating deliveries', 'Ensures a continuous supply of high-purity liquid nitrogen', 'Reduces safety risks associated with handling LN2 cylinders', 'Minimal footprint due to all-in-one design', 'User-friendly interface with built-in diagnostics'],
+        },
+        {
+            id: 38,
+            name: 'Cryotherapy Chamber',
+            category: 'cryogenic',
+            image: 'https://www.nitrogenium.co.in/product_img/1744970390Cryo%20chamber%20(1).png',
+            shortDescription: '• Main Chamber Temperature: -100°C to -160°C',
+            description: 'Our Cryo Chamber offers precise and controlled cryotherapy sessions, designed for professional use in wellness, sports recovery, and medical applications. It features advanced temperature control and safety systems for optimal user experience.',
+            features: ['Main Chamber Temperature: -100°C to -160°C', 'Pre-Chamber Temperature: 0°C to -70°C', 'Power Consumption: 3500 VA', 'Session Duration: 1 to 3 minutes', 'Total Weight: 1500 kg'],
+            howItWorks: 'The cryo chamber utilizes advanced refrigeration technology to rapidly cool the main and pre-chambers to desired cryogenic temperatures. Users enter for short, controlled exposure to extreme cold.',
+            advantages: ['Accelerates muscle recovery and reduces inflammation', 'Boosts metabolism and aids in weight management', 'Enhances skin health and reduces signs of aging', 'Improves sleep quality and reduces stress', 'Non-invasive and safe treatment with controlled environment'],
+        }
+    ];
+
+const renderAllProducts = () => {
+    productGrid.innerHTML = ''; // Clear current products
+    productsData.forEach(product => {
+        const productCard = `
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group relative">
+                <div class="w-full h-56 bg-white flex items-center justify-center p-6"> <img src="${product.image}" alt="${product.name}" class="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6 text-center"> <h3 class="text-xl font-semibold text-gray-800 mb-2">${product.name}</h3>
+                    <p class="text-gray-600 text-base mb-4 line-clamp-2">${product.shortDescription.replace('• ', '')}</p> <button class="open-product-modal bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-all duration-300 text-lg font-medium shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
+                        data-product-id="${product.id}"
+                        data-product-name="${product.name}"
+                        data-product-image="${product.image}"
+                        data-product-short-description="${product.shortDescription}"
+                        data-product-description="${product.description}"
+                        data-product-features='${JSON.stringify(product.features)}'
+                        data-product-how-it-works="${product.howItWorks}"
+                        data-product-advantages='${JSON.stringify(product.advantages)}'
+                    >
+                        View Details
+                    </button>
+                </div>
+            </div>
+        `;
+        productGrid.insertAdjacentHTML('beforeend', productCard);
+    });
+};
+        // Initial render of all products
+        renderAllProducts();
+
+        // Event listener for opening the product details modal (delegated to productGrid)
+        productGrid.addEventListener('click', (event) => {
+            if (event.target.classList.contains('open-product-modal')) {
+                const button = event.target;
+                const productId = button.dataset.productId;
+                const productName = button.dataset.productName;
+                const productImage = button.dataset.productImage;
+                const productShortDescription = button.dataset.productShortDescription;
+                const productDescription = button.dataset.productDescription;
+                const productFeatures = JSON.parse(button.dataset.productFeatures);
+                const productHowItWorks = button.dataset.productHowItWorks;
+                const productAdvantages = JSON.parse(button.dataset.productAdvantages);
+
+                modalProductImage.src = productImage;
+                modalProductName.textContent = productName;
+                modalProductCode.textContent = productId;
+                modalProductShortDescription.innerHTML = productShortDescription;
+                
+                // Set data for the enquiry form in case it's opened
+                openEnquiryModalBtn.dataset.productId = productId;
+                openEnquiryModalBtn.dataset.productName = productName;
+                
+                modalProductDescription.textContent = productDescription;
+
+                modalProductFeatures.innerHTML = '';
+                productFeatures.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    modalProductFeatures.appendChild(li);
+                });
+
+                modalProductHowItWorks.textContent = productHowItWorks;
+
+                modalProductAdvantages.innerHTML = '';
+                productAdvantages.forEach(advantage => {
+                    const li = document.createElement('li');
+                    li.textContent = advantage;
+                    modalProductAdvantages.appendChild(li);
+                });
+
+                productModal.classList.remove('hidden');
+            }
+        });
+
+        // Event listener for closing the product details modal
+        closeModalButton.addEventListener('click', () => {
+            productModal.classList.add('hidden');
+        });
+
+        // Event listener for opening the enquiry modal from product details modal
+        openEnquiryModalBtn.addEventListener('click', () => {
+            const productId = openEnquiryModalBtn.dataset.productId;
+            const productName = openEnquiryModalBtn.dataset.productName;
+
+            enquiryProductNameSpan.textContent = productName;
+            enquiryProductIdInput.value = productId;
+            enquiryProductHiddenNameInput.value = productName; // Store product name in hidden field too
+
+            productModal.classList.add('hidden'); // Hide product details modal
+            enquiryModal.classList.remove('hidden'); // Show enquiry modal
+            enquiryStatusDiv.classList.add('hidden'); // Hide previous status message
+            enquiryForm.reset(); // Clear the form
+        });
+
+        // Event listener for closing the enquiry modal
+        closeEnquiryModalButton.addEventListener('click', () => {
+            enquiryModal.classList.add('hidden');
+        });
+
+        // Event listener for enquiry form submission
+        enquiryForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            enquiryStatusDiv.classList.remove('hidden');
+            enquiryStatusDiv.classList.remove('text-green-600', 'text-red-600'); // Clear previous styling
+
+            // Simulate form submission (replace with actual AJAX request to your server)
+            const formData = new FormData(enquiryForm);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+
+            console.log('Enquiry Data:', data); // Log data for debugging
+
+            // Example: Send data using fetch API
+            // fetch('/your-enquiry-endpoint', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(data),
+            // })
+            // .then(response => response.json())
+            // .then(result => {
+            //     if (result.success) {
+            //         enquiryStatusDiv.textContent = 'Enquiry submitted successfully!';
+            //         enquiryStatusDiv.classList.add('text-green-600');
+            //         enquiryForm.reset(); // Clear form on success
+            //         setTimeout(() => {
+            //             enquiryModal.classList.add('hidden'); // Close modal after a delay
+            //         }, 3000);
+            //     } else {
+            //         enquiryStatusDiv.textContent = 'Failed to submit enquiry. Please try again.';
+            //         enquiryStatusDiv.classList.add('text-red-600');
+            //     }
+            // })
+            // .catch(error => {
+            //     console.error('Error submitting enquiry:', error);
+            //     enquiryStatusDiv.textContent = 'An error occurred. Please try again later.';
+            //     enquiryStatusDiv.classList.add('text-red-600');
+            // });
+
+            // For demonstration purposes, just show success message
+            enquiryStatusDiv.textContent = 'Enquiry submitted successfully! We will get back to you soon.';
+            enquiryStatusDiv.classList.add('text-green-600');
+            enquiryForm.reset(); // Clear the form after simulated submission
+            setTimeout(() => {
+                enquiryModal.classList.add('hidden'); // Close modal after a delay
+            }, 3000);
+        });
+    });
+</script>
+
+<style>
+    /* No changes needed to existing styles as we are adding a new modal, not modifying existing appearance heavily */
+</style>
+    <!-- Section 7: Work Process -->
+    <section class="py-10 md:py-20  overflow-hidden bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-route mr-2"></i>
+                    <span class="font-semibold">Our Process</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">How We Work</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our systematic approach ensures quality delivery and customer satisfaction
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-500 to-orange-600 hidden lg:block"></div>
+
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col lg:flex-row items-center gap-8" data-aos="fade-right">
+                        <div class="lg:w-1/2 lg:text-right">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                                <div class="flex items-center justify-center lg:justify-end mb-4">
+                                    <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">01</div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Consultation & Analysis</h3>
+                                <p class="text-gray-600">We begin with a comprehensive analysis of your requirements, site assessment, and understanding of your specific industrial needs.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="lg:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop" alt="Consultation" class="rounded-2xl shadow-lg w-full">
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-8" data-aos="fade-left">
+                        <div class="lg:w-1/2 lg:text-left">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                                <div class="flex items-center justify-center lg:justify-start mb-4">
+                                    <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">02</div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Custom Design & Engineering</h3>
+                                <p class="text-gray-600">Our expert engineers design customized solutions tailored to your specific requirements using advanced CAD/CAM technology.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="lg:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop" alt="Design" class="rounded-2xl shadow-lg w-full">
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col lg:flex-row items-center gap-8" data-aos="fade-right">
+                        <div class="lg:w-1/2 lg:text-right">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                                <div class="flex items-center justify-center lg:justify-end mb-4">
+                                    <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">03</div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Manufacturing & Quality Control</h3>
+                                <p class="text-gray-600">State-of-the-art manufacturing with rigorous quality control processes ensuring international standards compliance.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="lg:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=400&h=300&fit=crop" alt="Manufacturing" class="rounded-2xl shadow-lg w-full">
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-8" data-aos="fade-left">
+                        <div class="lg:w-1/2 lg:text-left">
+                            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                                <div class="flex items-center justify-center lg:justify-start mb-4">
+                                    <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">04</div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Installation & Support</h3>
+                                <p class="text-gray-600">Professional installation, comprehensive training, and ongoing support to ensure optimal performance and customer satisfaction.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="lg:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop" alt="Installation" class="rounded-2xl shadow-lg w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!-- Section 4: Interactive Statistics -->
+  
+
+    <!-- Section 8: Case Studies -->
+    
+
+    <!-- Section 9: About Us -->
+    <section id="about" class="py-10 md:py-20 overflow-hidden bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-building mr-2"></i>
+                        <span class="font-semibold">About Nitrogenium</span>
+                    </div>
+                    
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Leading the Future of Industrial Innovation</h2>
+                    
+                    <p class="text-lg text-gray-600 mb-6">
+                        Established in 2011 in Delhi, India, Nitrogenium Innovations & Filteration India Pvt. Ltd. has emerged as the most reputed manufacturer, distributor, and supplier of comprehensive industrial gas generators and filtration systems.
+                    </p>
+                    
+                    <p class="text-lg text-gray-600 mb-8">
+                        Our product range is fabricated using superior quality raw materials and sophisticated technology, ensuring adherence to international quality standards. We are committed to providing innovative solutions that drive industrial excellence.
+                    </p>
+
+                    <!-- Key Features -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">ISO Certified</h4>
+                                <p class="text-sm text-gray-600">International quality standards compliance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">13+ Years Experience</h4>
+                                <p class="text-sm text-gray-600">Proven track record in industrial solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Advanced Technology</h4>
+                                <p class="text-sm text-gray-600">Cutting-edge manufacturing processes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">24/7 Support</h4>
+                                <p class="text-sm text-gray-600">Round-the-clock customer service</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="openEnquiryModalBtn" class="btn-primary text-white px-8 py-3 rounded-lg font-semibold">
+                        <i class="fas fa-info-circle mr-2"></i>Learn More About Us
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div data-aos="fade-left">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=500&fit=crop" 
+                             alt="About Nitrogenium" 
+                             class="rounded-2xl shadow-2xl w-full">
+                        
+                        <!-- Overlay Stats -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-orange-500 mb-1">189+</div>
+                            <div class="text-sm text-gray-600">Successful Projects</div>
+                        </div>
+                        
+                        <div class="absolute -top-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-orange-500 mb-1">168+</div>
+                            <div class="text-sm text-gray-600">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+   
+
+    <!-- Section 13: FAQ -->
+    <section class="py-10 md:py-20 overflow-hidden bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span class="font-semibold">FAQ</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Find answers to common questions about our products and services
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">What makes your filtration systems different from competitors?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">Our systems feature advanced IoT integration, AI-powered monitoring, and predictive maintenance capabilities. We offer 99.9% efficiency with 40% lower energy consumption compared to traditional systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">Do you provide installation and training services?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">Yes, we provide complete installation services by certified technicians and comprehensive training for your team. Our training includes system operation, maintenance procedures, and troubleshooting.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">What kind of warranty and support do you offer?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">We offer warranties ranging from 1-5 years depending on the product. Our support includes 24/7 phone support, remote monitoring, predictive maintenance, and on-site service when needed.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">Can your systems integrate with existing industrial setups?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">Our systems are designed for seamless integration with existing industrial infrastructure. We provide custom integration services and ensure compatibility with your current processes.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">What industries do you serve?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">We serve pharmaceutical, automotive, food processing, chemical, textile, and many other industries. Our solutions are customized to meet specific industry requirements and compliance standards.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="600">
+                        <button class="faq-toggle w-full text-left p-6 focus:outline-none flex items-center justify-between">
+                            <span class="font-semibold text-gray-800">Do you offer financing options for large purchases?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">Yes, we offer flexible financing options including installment plans, leasing options, and customized payment schedules to suit your budget and cash flow requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Section 16: Certifications -->
+    <section class="py-10 md:py-20 overflow-hidden bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-certificate mr-2"></i>
+                    <span class="font-semibold">Certifications</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Quality Certifications & Standards</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our commitment to quality is validated by international certifications and industry standards
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-award text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">ISO 9001:2015</h4>
+                    <p class="text-xs text-gray-600 mt-1">Quality Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-leaf text-4xl text-green-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">ISO 14001:2015</h4>
+                    <p class="text-xs text-gray-600 mt-1">Environmental Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-shield-alt text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">ISO 45001:2018</h4>
+                    <p class="text-xs text-gray-600 mt-1">Occupational Health & Safety</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-check-circle text-4xl text-purple-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">CE Marking</h4>
+                    <p class="text-xs text-gray-600 mt-1">European Conformity</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-star text-4xl text-yellow-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">BIS Certification</h4>
+                    <p class="text-xs text-gray-600 mt-1">Bureau of Indian Standards</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-globe text-4xl text-indigo-500 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 text-sm">ASME Certified</h4>
+                    <p class="text-xs text-gray-600 mt-1">American Society of Mechanical Engineers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 14: Blog/News -->
+    <section class="py-10 md:py-20 overflow-hidden bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-newspaper mr-2"></i>
+                    <span class="font-semibold">Latest News</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Industry Insights & Updates</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Stay updated with the latest trends and innovations in industrial technology
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop" 
+                             alt="Future of Industrial Automation" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Technology</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-orange-600 transition-colors">
+                            The Future of Industrial Automation
+                        </h3>
+                        <p class="text-gray-600 mb-4">Exploring how AI and IoT are revolutionizing manufacturing processes and creating new opportunities for efficiency.</p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>June 10, 2024</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">By Dr. Rajesh Kumar</span>
+                            <div class="flex items-center space-x-3 text-sm text-gray-500">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1,250</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-heart"></i>
+                                    <span>89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400&h=250&fit=crop" 
+                             alt="Sustainable Manufacturing" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Sustainability</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-orange-600 transition-colors">
+                            Sustainable Manufacturing Practices
+                        </h3>
+                        <p class="text-gray-600 mb-4">How green technology is shaping the future of industrial production and reducing environmental impact.</p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>June 8, 2024</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">By Priya Sharma</span>
+                            <div class="flex items-center space-x-3 text-sm text-gray-500">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-eye"></i>
+                                    <span>980</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-heart"></i>
+                                    <span>67</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400&h=250&fit=crop" 
+                             alt="Quality Control" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Quality</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-orange-600 transition-colors">
+                            Quality Control in Modern Manufacturing
+                        </h3>
+                        <p class="text-gray-600 mb-4">Advanced quality assurance techniques and technologies for maintaining excellence in industrial processes.</p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>June 5, 2024</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">By Sarah Johnson</span>
+                            <div class="flex items-center space-x-3 text-sm text-gray-500">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-eye"></i>
+                                    <span>756</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-heart"></i>
+                                    <span>45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="btn-primary text-white px-8 py-3 rounded-lg font-semibold">
+                    <i class="fas fa-arrow-right mr-2"></i>View All Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+   <section class="py-10 md:py-20 overflow-hidden bg-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Ready to Transform Your Industrial Processes?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Join 168+ satisfied clients who have revolutionized their operations with our advanced solutions. Get started today with a free consultation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">
+                        <i class="fas fa-phone mr-2"></i>Call Now: +91-9810070303
+                    </button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                        <i class="fas fa-download mr-2"></i>Download Brochure
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 17: Contact -->
+  
+
+    <!-- Section 18: CTA Section -->
+   
+  <section id="contact" class="py-10 md:py-20 overflow-hidden w-full bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span class="font-semibold">Contact Us</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to transform your industrial processes? Contact our experts today for a free consultation
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
+                        <form class="space-y-6" id="contactForm">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                    <input type="text" 
+                                           class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                           required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                    <input type="text" 
+                                           class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                           required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" 
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                       required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" 
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                       required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                                <input type="text" 
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" 
+                                          class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                          required></textarea>
+                            </div>
+                            <button type="submit" class="w-full btn-primary text-white py-3 rounded-lg font-semibold">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div data-aos="fade-left">
+                    <div class="space-y-8">
+                        <!-- Contact Info -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 p-3 rounded-lg">
+                                        <i class="fas fa-phone text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Phone</h4>
+                                        <p class="text-gray-600">+91-9810070303</p>
+                                        <p class="text-gray-600">+91-9527070303</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 p-3 rounded-lg">
+                                        <i class="fas fa-envelope text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Email</h4>
+                                        <p class="text-gray-600">info@nitrogenium.co.in</p>
+                                        <p class="text-gray-600">sales@nitrogenium.co.in</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 p-3 rounded-lg">
+                                        <i class="fas fa-map-marker-alt text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Address</h4>
+                                        <p class="text-gray-600">Delhi, India</p>
+                                        <p class="text-gray-600">Manufacturing Facility & Head Office</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 p-3 rounded-lg">
+                                        <i class="fas fa-clock text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Business Hours</h4>
+                                        <p class="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                        <p class="text-gray-600">Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7003.346604291646!2d77.308658!3d28.639552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb53fffffffd%3A0xfa17df48204831b0!2sNitrogenium%20Innovations%20%26%20Filteration%20India%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1749835907676!5m2!1sen!2sin"  class="w-full h-[250px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 overflow-hidden text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="gradient-bg text-white px-4 py-3 rounded-xl font-bold text-2xl shadow-lg">
+                            N2
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">NITROGENIUM</h3>
+                            <p class="text-xs text-gray-400 font-medium">ADVANCED INDUSTRIAL SOLUTIONS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Leading manufacturer of advanced industrial gas generators and filtration systems since 2011. Committed to innovation and excellence.
+                    </p>
+                  
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/Nitrogenium-Innovations-Filteration-India-Pvt-Ltd-104628067958875/" class="bg-gray-800 hover:bg-orange-500 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/NitrogeniumI" class="bg-gray-800 hover:bg-orange-500 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nitrogenium-innovations-filteration-india-pvt-ltd" class="bg-gray-800 hover:bg-orange-500 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-orange-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-orange-500 transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-orange-500 transition-colors">Products</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-bold mb-6">Our Products</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Nitrogen Generators</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Oxygen Generators</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Filtration Systems</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Purification Equipment</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Automation Systems</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">IoT Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold mb-6">Contact Info</h4>
+                    <div class="space-y-4 text-sm text-gray-400">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-orange-500 flex-shrink-0"></i>
+                            <div>
+                                <p>+91-9810070303</p>
+                                <p>+91-9527070303</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-orange-500 flex-shrink-0"></i>
+                            <span>info@nitrogenium.co.in</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-orange-500 flex-shrink-0"></i>
+                            <span>Delhi, India</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-orange-500 flex-shrink-0"></i>
+                            <span>Mon-Sat: 9AM-6PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Nitrogenium Innovations & Filteration India Pvt. Ltd. All Rights Reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="hover:text-orange-500 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-orange-500 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-orange-500 transition-colors">Cookie Policy</a>
+                    <a href="#" class="hover:text-orange-500 transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-all transform scale-0 z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+       
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.counter').closest('section');
+        if (statsSection) observer.observe(statsSection);
+
+        // Product Tabs
+        const productTabs = document.querySelectorAll('.product-tab');
+        const productGrid = document.getElementById('productGrid');
+
+        const products = {
+            filtration: [
+                {
+                    name: 'Advanced Air Filtration Unit',
+                    description: 'High-efficiency particulate air filtration with smart monitoring',
+                    features: ['HEPA Technology', 'IoT Enabled', 'Energy Efficient'],
+                    price: '₹2,50,000',
+                    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=300&h=200&fit=crop'
+                },
+                {
+                    name: 'Industrial Gas Purifier',
+                    description: 'Multi-stage purification system for industrial applications',
+                    features: ['Multi-Stage Process', 'Automated Control', 'Low Maintenance'],
+                    price: '₹3,75,000',
+                    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=300&h=200&fit=crop'
+                }
+            ],
+            generators: [
+                {
+                    name: 'Nitrogen Generator Pro',
+                    description: 'High-purity nitrogen generation with advanced controls',
+                    features: ['99.9% Purity', 'Smart Controls', 'Remote Monitoring'],
+                    price: '₹5,50,000',
+                    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=200&fit=crop'
+                },
+                {
+                    name: 'Oxygen Generator Elite',
+                    description: 'Medical-grade oxygen generation system',
+                    features: ['Medical Grade', 'Continuous Operation', 'Safety Systems'],
+                    price: '₹4,25,000',
+                    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop'
+                }
+            ],
+            automation: [
+                {
+                    name: 'Smart Control Panel',
+                    description: 'AI-powered control system for industrial processes',
+                    features: ['AI Integration', 'Touch Interface', 'Cloud Connectivity'],
+                    price: '₹1,85,000',
+                    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop'
+                },
+                {
+                    name: 'Process Automation Suite',
+                    description: 'Complete automation solution for manufacturing',
+                    features: ['Full Automation', 'Custom Programming', '24/7 Support'],
+                    price: '₹8,50,000',
+                    image: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=300&h=200&fit=crop'
+                }
+            ]
+        };
+
+        function loadProducts(category) {
+            const categoryProducts = products[category];
+            productGrid.innerHTML = categoryProducts.map(product => `
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden card-hover">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4">
+                            <div class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">${product.price}</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">${product.name}</h3>
+                        <p class="text-gray-600 mb-4">${product.description}</p>
+                        <div class="space-y-2 mb-6">
+                            ${product.features.map(feature => `
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check text-green-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">${feature}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="flex space-x-3">
+                            <button class="flex-1 btn-primary text-white py-2 rounded-lg font-semibold">Get Quote</button>
+                            <button class="flex-1 border border-gray-200 text-gray-700 hover:bg-gray-50 py-2 rounded-lg font-semibold transition-all">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        productTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                productTabs.forEach(t => {
+                    t.classList.remove('active', 'bg-orange-500', 'text-white');
+                    t.classList.add('bg-white', 'text-gray-700');
+                });
+                tab.classList.add('active', 'bg-orange-500', 'text-white');
+                tab.classList.remove('bg-white', 'text-gray-700');
+                
+                const category = tab.getAttribute('data-category');
+                loadProducts(category);
+            });
+        });
+
+        // Load initial products
+        loadProducts('filtration');
+
+        // Case Studies Filter
+        const caseFilters = document.querySelectorAll('.case-filter');
+        const caseStudiesGrid = document.getElementById('caseStudiesGrid');
+
+        const caseStudies = [
+            {
+                title: 'Pharmaceutical Manufacturing Optimization',
+                client: 'MedTech Industries',
+                challenge: 'Reducing contamination and improving air quality',
+                solution: 'Implemented advanced filtration system with real-time monitoring',
+                results: ['99.9% contamination reduction', '40% energy savings', 'ROI in 8 months'],
+                image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop',
+                category: 'pharmaceutical'
+            },
+            {
+                title: 'Automotive Production Enhancement',
+                client: 'AutoCorp Manufacturing',
+                challenge: 'Improving nitrogen purity for welding processes',
+                solution: 'Deployed high-purity nitrogen generators with IoT integration',
+                results: ['99.99% nitrogen purity', '30% cost reduction', 'Zero downtime'],
+                image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop',
+                category: 'automotive'
+            },
+            {
+                title: 'Food Processing Safety Upgrade',
+                client: 'FoodSafe Ltd.',
+                challenge: 'Ensuring food safety through controlled atmosphere',
+                solution: 'Installed smart gas management system with automated controls',
+                results: ['100% compliance', '50% efficiency gain', 'Enhanced safety'],
+                image: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400&h=300&fit=crop',
+                category: 'food'
+            }
+        ];
+
+        function loadCaseStudies(filter) {
+            const filteredCases = filter === 'all' ? caseStudies : caseStudies.filter(study => study.category === filter);
+            caseStudiesGrid.innerHTML = filteredCases.map(study => `
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden card-hover">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${study.image}" alt="${study.title}" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold capitalize">${study.category}</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">${study.title}</h3>
+                        <p class="text-orange-600 font-medium mb-4">${study.client}</p>
+                        <div class="space-y-3 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                <p class="text-sm text-gray-600">${study.challenge}</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Solution:</h4>
+                                <p class="text-sm text-gray-600">${study.solution}</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-gray-800">Results:</h4>
+                            ${study.results.map(result => `
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check text-green-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">${result}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        caseFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                caseFilters.forEach(f => {
+                    f.classList.remove('active', 'bg-orange-500', 'text-white');
+                    f.classList.add('bg-white', 'text-gray-700');
+                });
+                filter.classList.add('active', 'bg-orange-500', 'text-white');
+                filter.classList.remove('bg-white', 'text-gray-700');
+                
+                const category = filter.getAttribute('data-filter');
+                loadCaseStudies(category);
+            });
+        });
+
+        // Load initial case studies
+        loadCaseStudies('all');
+
+        // Testimonial Slider
+        let currentTestimonial = 0;
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        const totalTestimonials = 3;
+
+        function showTestimonial(index) {
+            testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
+            testimonialDots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('bg-orange-500');
+                    dot.classList.remove('bg-gray-300');
+                } else {
+                    dot.classList.add('bg-gray-300');
+                    dot.classList.remove('bg-orange-500');
+                }
+            });
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                showTestimonial(currentTestimonial);
+            });
+        });
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('scale-0');
+                backToTopBtn.classList.add('scale-100');
+            } else {
+                backToTopBtn.classList.add('scale-0');
+                backToTopBtn.classList.remove('scale-100');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message (you can replace this with actual form submission logic)
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Navbar Background Change on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-white');
+            } else {
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-white');
+            }
+        });
+
+        // Loading Animation for Images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Parallax Effect for Hero Section
+        // window.addEventListener('scroll', () => {
+        //     const scrolled = window.pageYOffset;
+        //     const parallax = document.querySelector('#home');
+        //     if (parallax) {
+        //         const speed = scrolled * 0.5;
+        //         parallax.style.transform = `translateY(${speed}px)`;
+        //     }
+        // });
+
+        // Initialize all components
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any additional initialization code can go here
+            console.log('Nitrogenium Landing Page Loaded Successfully!');
+        });
+    </script>
+</body>
+</html>
